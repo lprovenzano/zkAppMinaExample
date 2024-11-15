@@ -62,14 +62,16 @@ export type WorkerFunctions = keyof typeof functions;
 export type ZkappWorkerRequest = {
   id: number;
   fn: WorkerFunctions;
-  args: any;
-};
+  args: any; 
+};   
 
 
 export type ZkappWorkerReponse = {
   id: number;
   data: any;
 };
+
+
 
 if (typeof window !== 'undefined') {
   addEventListener(
