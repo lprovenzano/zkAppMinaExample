@@ -67,6 +67,7 @@ export default class ZkappWorkerClient {
   nextId: number;
 
   constructor() {
+    
     this.worker = new Worker(new URL('./zkappWorker.ts', import.meta.url));
     this.promises = {};
     this.nextId = 0;
